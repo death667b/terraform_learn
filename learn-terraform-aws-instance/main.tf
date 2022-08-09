@@ -10,12 +10,12 @@ terraform {
 }
 
 provider "aws" {
-  region = "ap-southeast-2"
-  profile = "default - personal"
+  profile = "default-personal"
+  region  = "ap-southeast-2"
 }
 
 resource "aws_instance" "app_server" {
-  ami           = "ami-830c94e3"
+  ami           = "ami-0a55481a0d4359a61"
   instance_type = "t2.micro"
 
   tags = {
