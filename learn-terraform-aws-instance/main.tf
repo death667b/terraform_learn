@@ -1,4 +1,11 @@
 terraform {
+  # cloud {
+  #   organization = "IanDaniel"
+
+  #   workspaces {
+  #     name = "LearningWorkspace"
+  #   }
+  # }
   required_providers {
     aws = {
       source  = "hashicorp/aws"
@@ -10,7 +17,7 @@ terraform {
 }
 
 provider "aws" {
-  profile = "default-personal"
+  # profile = "default-personal"
   region  = "ap-southeast-2"
 }
 
